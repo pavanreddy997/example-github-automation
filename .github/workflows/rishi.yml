@@ -1,0 +1,20 @@
+name: On Merge Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hi
+        run: echo "Hi Hello"
+
+      - name: Demo Task
+        run: echo "Demo task running..."
+
+      - name: Another Task
+        run: echo "This is another task"
+
